@@ -125,10 +125,6 @@ div#formulario > form > button>span{
 
 
 @media (min-width: 780px) and (max-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
   
     section#login{
         width: 750px;
@@ -178,10 +174,6 @@ div#formulario > form > button>span{
 
 
 @media (min-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
   
     div#imagem{
         float: right;

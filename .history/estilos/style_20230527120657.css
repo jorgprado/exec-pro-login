@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --corBG: #CBAF89;
-    --corButton: #7D8752;
-    --corInput: #CDCCC8;
-    --corBGform: #783228;
+    --corBotao: #E8FF80;
+    --corBG: #703294;
 }
 
 *{
@@ -59,16 +57,19 @@ div#formulario > p{
     text-align: left;
 }
 
-div#formulario > form {
+div#formulario > form{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 div#formulario > form > div.campo{
     display: flex;
     border-radius:5px;
     height: 45px;
-    background-color: var(--corBGform);
+    background-color: #AF5AE0;
     width: 280px;
     justify-content: center;
     margin: 10px 0;
@@ -76,11 +77,12 @@ div#formulario > form > div.campo{
 }
 
 div#formulario > form > div > input{
+
     border-radius:5px;
     height: 30px;
-    width: 230px;
+    width: 245px;
     padding: 5px;
-    background-color: var(--corInput);
+    background-color: var(--corBotao);
     font-size: 1.2em;
 }
 
@@ -96,8 +98,7 @@ div#formulario > form > button[type=submit]{
     height: 45px;
     border-radius:5px;
     margin-bottom: 5px;
-    background-color: var(--corButton);
-    color: white;
+    background-color: var(--corBotao);
     font-size: 1.2em;
     justify-content: center;
     align-items:center;
@@ -122,120 +123,78 @@ div#formulario > form > button>span{
     
 }
 
-
-
-@media (min-width: 780px) and (max-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
+@media (min-width: 768px) and (max-width: 990px){
   
-    section#login{
-        width: 750px;
-        height: 310px;
-        overflow: hidden;
-    }
-
     div#imagem{
-        display: block;
         float: left;
-        width: 30%;
+        width: 210px;
         height: 310px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         border-top-right-radius: 0px;
     }
 
-    div#formulario > form{
-        align-items:left;
-        text-align: center;
-        justify-content: left;
-        padding-left: 30px;
-    }
-
-    div#formulario > p{
-        text-align: center;
-    }
- 
-    div#formulario > form > div.campo{
-        width: 95%;
-    }
-
-    div#formulario > form > div > input{
-        width: 95%;
-    }
-
-    div#formulario > form > button[type=submit]{
-        width: 95%;
-    }
-
-    div#formulario > form > button{
-        width: 95%;
-    }
-   
-}
-
-
-
-@media (min-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
-  
-    div#imagem{
-        float: right;
-        width: 50%;
-        height: 100%;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 5px;
-    }
-
     section#login{
-        width: 950px;
-        height: 400px;
+        width: 720px;
+        height: 310px;
         overflow: hidden;
     }
 
-    div#formulario {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        align-items:center;
-    }
-
-    div#formulario > h1{
-        font-size: 1.8em;
-        padding-top: 15px;
-        font-weight: bolder;
-    }
-
-    div#formulario > p{
-        padding-top: 10px;
-    }
-
-    div#formulario > form{
-        text-align: center;
-        align-items:left;
-        padding-top: 15px;
-    }
-
     div#formulario > form > div.campo{
-        width: 95%;
+        width: 480px;
     }
 
     div#formulario > form > div > input{
-        width: 95%;
+        width: 450px;
     }
 
     div#formulario > form > button[type=submit]{
-        width: 95%;
+        width: 480px;
     }
 
     div#formulario > form > button{
-        width: 95%;
+        width: 480px;
     }
 
-    
+    div#formulario > p{
+        text-align: center;
+    }
+}
+
+@media (min-width: 990px){
+  
+    div#imagem{
+        float: right;
+        width: 210px;
+        height: 500px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+
+    section#login{
+        width: 720px;
+        height: 310px;
+        overflow: hidden;
+    }
+
+    div#formulario > form > div.campo{
+        width: 480px;
+    }
+
+    div#formulario > form > div > input{
+        width: 450px;
+    }
+
+    div#formulario > form > button[type=submit]{
+        width: 480px;
+    }
+
+    div#formulario > form > button{
+        width: 480px;
+    }
+
+    div#formulario > p{
+        text-align: center;
+    }
 }

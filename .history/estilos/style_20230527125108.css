@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
 :root {
-    --corBG: #CBAF89;
-    --corButton: #7D8752;
-    --corInput: #CDCCC8;
-    --corBGform: #783228;
+    --corBotao: #CBAF89;
+    --corBG: #CDCCC8;
+    
+    
+    #783228
+    #7D8752
 }
 
 *{
@@ -68,7 +70,7 @@ div#formulario > form > div.campo{
     display: flex;
     border-radius:5px;
     height: 45px;
-    background-color: var(--corBGform);
+    background-color: #AF5AE0;
     width: 280px;
     justify-content: center;
     margin: 10px 0;
@@ -76,11 +78,12 @@ div#formulario > form > div.campo{
 }
 
 div#formulario > form > div > input{
+
     border-radius:5px;
     height: 30px;
-    width: 230px;
+    width: 245px;
     padding: 5px;
-    background-color: var(--corInput);
+    background-color: var(--corBotao);
     font-size: 1.2em;
 }
 
@@ -96,8 +99,7 @@ div#formulario > form > button[type=submit]{
     height: 45px;
     border-radius:5px;
     margin-bottom: 5px;
-    background-color: var(--corButton);
-    color: white;
+    background-color: var(--corBotao);
     font-size: 1.2em;
     justify-content: center;
     align-items:center;
@@ -124,14 +126,10 @@ div#formulario > form > button>span{
 
 
 
-@media (min-width: 780px) and (max-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
+@media (min-width: 768px) and (max-width: 990px){
   
     section#login{
-        width: 750px;
+        width: 800px;
         height: 310px;
         overflow: hidden;
     }
@@ -178,10 +176,6 @@ div#formulario > form > button>span{
 
 
 @media (min-width: 990px){
-
-    body{
-        background-image: linear-gradient(to bottom, var(--corBGform), var(--corBG));
-    }
   
     div#imagem{
         float: right;
@@ -207,7 +201,7 @@ div#formulario > form > button>span{
 
     div#formulario > h1{
         font-size: 1.8em;
-        padding-top: 15px;
+        padding-top: 10px;
         font-weight: bolder;
     }
 
@@ -218,7 +212,7 @@ div#formulario > form > button>span{
     div#formulario > form{
         text-align: center;
         align-items:left;
-        padding-top: 15px;
+        padding-top: 25px;
     }
 
     div#formulario > form > div.campo{
